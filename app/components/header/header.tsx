@@ -95,7 +95,7 @@ export default function Header() {
                 handleToggleBurger={handleToggleBurger}
               />
               <HeaderBottomMenuItem
-                link={'/AffiliateProgram'}
+                link={'/textolite'}
                 text="Партнерская программа"
                 alt="Partnership program"
                 open={open}
