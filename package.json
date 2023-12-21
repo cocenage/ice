@@ -1,0 +1,32 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "export": "next export",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.523",
+    "git": "^0.1.5",
+    "mobx": "^6.12.0",
+    "mobx-react-lite": "^4.0.5",
+    "mobx-utils": "^6.0.8",
+    "next": "^14.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "sass": "^1.69.5",
+    "sharp": "^0.33.1",
+    "swiper": "^11.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  }
+}

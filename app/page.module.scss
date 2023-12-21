@@ -1,0 +1,32 @@
+@import '@/scss/vars.scss';
+@import '../scss/mixins.scss';
+
+
+.notFound{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 20px;
+    background-color: $black-color;
+    border-radius: 0px 0px 20px 20px;
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__inner{
+        display: flex;
+        align-items: center;
+    }
+    &__title{
+        margin: 0;
+        padding: 0;
+        color: $accent-color;
+        @include title;
+        transform: translateX(-50%);
+    }
+    &_image{
+        margin: 0;
+        padding: 0;
+    }
+}
+

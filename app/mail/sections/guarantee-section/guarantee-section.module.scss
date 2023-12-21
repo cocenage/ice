@@ -1,0 +1,103 @@
+@import '@/scss/vars.scss';
+@import '@/scss/mixins.scss';
+
+.guarantee_section {
+  padding-top: 100px;
+  &__container {
+    @include container;
+  }
+  &__title {
+    @include title;
+  }
+  &__inner {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__card {
+    border-radius: 6px;
+   padding: 15px ;
+    box-shadow: $shadow;
+    width: 465px;
+    position: relative;
+    overflow: hidden;
+    &__primary {
+      background-color: $accent-color;
+      position: relative;
+      overflow: hidden;
+      &:before{
+        content: '';
+        // background-image: url(/papapa.png); 
+        // background-repeat: no-repeat;
+        // background-position: right bottom;
+        // transform: rotate(5deg);
+        // width: 280px;
+        // height: 400px;
+    
+    
+    
+    
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+      }
+      &:after{
+        content: '';
+        background-image: url(/papapa.png); 
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        transform: rotate(5deg);
+        width: 600px;
+        height: 180px;
+    
+    
+    
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    &_title{
+        font-family: $font-incosolata;
+        font-size: 20px;
+        font-weight: 700;
+        &__primary{
+            color: $white-color;
+            position: relative;
+            z-index: 3;
+        }
+    }
+    &_descr{
+        font-family: $font-incosolata;
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba($text-color, .6);
+        &__primary{
+            color: $white-color;
+            position: relative;
+            z-index: 3;
+        }
+    }
+  }
+  &__imageBorder {
+    padding: 0;
+    margin: 0;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: $background-card;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__primary{
+        position: relative;
+        z-index: 3;
+    }
+  }
+}
