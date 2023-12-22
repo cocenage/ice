@@ -31,6 +31,9 @@
     width: 465px;
     position: relative;
     overflow: hidden;
+    @include adaptive(400px) {
+      width: 290px;
+    }
     &__primary {
       background-color: $accent-color;
       position: relative;

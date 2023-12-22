@@ -152,6 +152,11 @@
     padding: 20px;
     background-color: $background-secondary;
     box-shadow: $shadow;
+    @include adaptive(400px) {
+      img{
+        display: none;
+      }
+    }
     &_block {
       display: flex;
     }
@@ -188,6 +193,11 @@
     padding: 20px;
     background-color: $background-secondary;
     box-shadow: $shadow;
+    @include adaptive(400px) {
+      img{
+        display: none;
+      }
+    }
     &_title {
       @include subtitle;
       color: $text-color;

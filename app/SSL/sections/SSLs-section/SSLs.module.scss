@@ -32,6 +32,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include adaptive(400px) {
+        width: 290px;
+       }
     &__textWrapper{
         display: flex;
         flex-direction: column;

@@ -16,6 +16,11 @@
     flex-wrap: wrap;
     border-radius: 15px;
   }
+  @include adaptive(400px) {
+    width: 310px;
+    right: 0;
+    padding-left: 10px;
+   }
   &__inner {
     display: flex;
     align-items: flex-start;

@@ -6,6 +6,9 @@
   &__container {
     @include container;
   }
+  // @include adaptive(400px) {
+  //   width: 280px;
+  //  }
   &__title {
     @include title;
   }

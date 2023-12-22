@@ -37,6 +37,9 @@
         @include adaptive(720px) {
             font-size: 48px;
         }
+        @include adaptive(400px) {
+           font-size: 30px;
+          }
     }
     &__description{
         margin: 0;

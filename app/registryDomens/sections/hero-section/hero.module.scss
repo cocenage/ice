@@ -38,6 +38,10 @@
     font-size: 61px;
     font-weight: 700;
     margin-bottom: 50px;
+    @include adaptive(400px) {
+      font-size: 35px;
+      width: 280px;
+     }
   }
   &__description {
     margin: 0;
@@ -48,12 +52,16 @@
     font-weight: 600;
     max-width: 800px;
     margin-bottom: 30px;
+    
   }
   &__subtitle {
     font-family: $font-monterrat;
     font-size: 49px;
     font-weight: 600;
     margin-bottom: 70px;
+    @include adaptive(400px) {
+      font-size: 25px;
+     } 
   }
   &__form {
     display: flex;

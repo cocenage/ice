@@ -1,15 +1,21 @@
-import { HelpsSection } from '../components/Helps/helps-section';
-import { GuaranteeSection } from './sections/guarantee-section/guarantee-section';
-import HeroSection from './sections/hero-section/Hero-section';
-import ServiceSection from './sections/service-section/service-section';
+import style from './page.module.scss';
+import { HelpsSection } from '@/app/components/Helps/helps-section'
+import { CommentsSection } from './comments-section/comments-section';
+import HeroSection from './hero-section/Hero-section';
+import ServiceSection from './service-section/service-section';
+import { PerformansSection } from "./performans-section/performans-section";
 
-export default function Mail() {
+
+const DedicatedServers = () => {
   return (
     <>
       <HeroSection />
       <ServiceSection />
-      <GuaranteeSection />
+      <PerformansSection/>
       <HelpsSection />
+      <CommentsSection />
     </>
-  );
+  )
 }
+
+export default DedicatedServers

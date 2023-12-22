@@ -38,6 +38,10 @@
     font-size: 61px;
     font-weight: 700;
     margin-bottom: 20px;
+    @include adaptive(400px) {
+      width: 290px;
+      font-size: 35px;
+     }
   }
   &__description {
     margin: 0;
@@ -56,6 +60,10 @@
     margin-bottom: 70px;
 
     text-align: center;
+    @include adaptive(400px) {
+      width: 290px;
+      font-size: 25px;
+     }
   }
   &__form {
     display: flex;

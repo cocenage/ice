@@ -123,6 +123,10 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
+  @include adaptive(400px) {
+    width: 290px;
+  }
+  
   &__title {
     padding: 0;
     margin: 0;

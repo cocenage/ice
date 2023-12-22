@@ -50,6 +50,10 @@
     height: 737px;
     box-shadow: $shadow;
 
+    @include adaptive(400px) {
+      width: 290px;
+    }
+
     &__textWrapper {
       max-width: 367px;
       width: 100%;
@@ -61,6 +65,9 @@
     &_title {
       @include subtitle;
       color: $white-color;
+      @include adaptive(400px) {
+        font-size: 30px;
+      }
     }
     &_descr {
       @include descr-reqular;
@@ -105,6 +112,9 @@
     }
     @include adaptive(427px){
       background-image: none;
+      img{
+        display: none;
+      }
     }
 
 
@@ -152,6 +162,12 @@
     padding: 20px;
     background-color: $background-secondary;
     box-shadow: $shadow;
+    @include adaptive(400px) {
+      width: 290px;
+      img{
+        display: none;
+      }
+    }
     &_block {
       display: flex;
     }
@@ -159,6 +175,9 @@
       margin: 0;
       @include subtitle;
       color: $text-color;
+      @include adaptive(400px) {
+        font-size: 38px;
+      }
     }
     &_descr {
       @include descr-reqular;
@@ -188,6 +207,11 @@
     padding: 20px;
     background-color: $background-secondary;
     box-shadow: $shadow;
+    @include adaptive(400px) {
+      img{
+        display: none;
+      }
+    }
     &_title {
       @include subtitle;
       color: $text-color;

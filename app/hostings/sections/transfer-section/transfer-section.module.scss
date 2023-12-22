@@ -6,6 +6,7 @@
   padding: 0;
   margin-bottom: 100px;
   &__container {
+    
     @include container;
     padding: 20px 30px;
     background-color: $background-card;
@@ -14,6 +15,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     border-radius: 15px;
+    @include adaptive(400px){
+      width: 290px;
+      margin-top: 150px;
+    } 
   }
   &__inner {
     display: flex;
@@ -30,6 +35,10 @@
     font-size: 49px;
     font-weight: 600;
     width: 450px;
+    @include adaptive(400px){
+      font-size: 25px;
+      width: 250px;
+    } 
   }
   &__btn {
     @include button($white-color, $accent-color);

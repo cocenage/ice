@@ -66,6 +66,9 @@
       align-items: center;
       gap: 45px;
       flex-wrap: nowrap;
+      @include adaptive(400px){
+        display: none;
+      }
     }
     &_checkbox {
       position: relative;

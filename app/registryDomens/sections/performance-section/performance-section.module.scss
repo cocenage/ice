@@ -38,11 +38,17 @@
     flex-direction: column;
     align-items: flex-start;
     width: 466px;
+    @include adaptive(400px) {
+      width: 290px;
+     }
     &__primary {
         overflow: hidden;
         background-color: $accent-color;
         position: relative;
         z-index: 3;
+        @include adaptive(400px) {
+          width: 290px;
+         }
         &:before{
             content: '';
             position: absolute;

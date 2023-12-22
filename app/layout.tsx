@@ -5,8 +5,8 @@ import Header from './components/header/header';
 import Footer from './components/footer/footer';
 
 export const metadata: Metadata = {
-  title: 'Fucking. Refrigerator',
-  description: 'Fucking. Refrigerator',
+  title: 'Refrigerator',
+  description: 'Refrigerator',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

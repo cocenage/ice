@@ -98,8 +98,8 @@
     z-index: 9999;
     @include adaptive(1270px) {
       z-index: 9999;
-      &.active_burger {
-      }
+      // &.active_burger {
+      // }
     @include adaptive(933px) {
       font-size: 26px;
     }
@@ -221,6 +221,7 @@
     @include adaptive(1270px) {
       grid-column: 1 span;
     }
+    
   }
   &__menu_link {
     margin: 0;
@@ -257,6 +258,9 @@
     @include adaptive(1270px) {
       &:hover(none) &:active {
         background-color: #2b2b2b;
+      }
+      @include adaptive(400px) {
+        font-size: 14px;
       }
     }
   }
@@ -360,6 +364,6 @@
       display: none;
     }
   }
-  &__menu_chevron {
-  }
+  // &__menu_chevron {
+  // }
 }
